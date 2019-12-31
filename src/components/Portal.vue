@@ -5,9 +5,9 @@
         <code>
             <div v-for="(portal, idx) in portals" :key="idx">
                 &lt;Placemark&gt;<br/>
-                &lt;name&gt;{{portal.name}}&lt;name&gt;<br/>
-                &lt;Point&gt;&lt;coordinates&gt;{{portal.lon + ',' + portal.lat + ',0'}}&lt;coordinates&gt;&lt;Point&gt;<br/>
-                &lt;styleUrl&gt;#pokestop&lt;styleUrl&gt;<br/>
+                &lt;name&gt;{{portal.name}}&lt;/name&gt;<br/>
+                &lt;Point&gt;&lt;coordinates&gt;{{portal.lon + ',' + portal.lat + ',0'}}&lt;/coordinates&gt;&lt;/Point&gt;<br/>
+                &lt;styleUrl&gt;#pokestop&lt;/styleUrl&gt;<br/>
                 &lt;/Placemark&gt;
             </div>
         </code>
