@@ -37,7 +37,7 @@
                                 let myObj = {
                                     name: map[i].gameEntities[j][2][8],
                                     lat: map[i].gameEntities[j][2][2].toString().slice(0, 2) + '.' + map[i].gameEntities[j][2][2].toString().slice(2),
-                                    lon: map[i].gameEntities[j][2][3].toString().slice(0, 2) + '.' + map[i].gameEntities[j][2][2].toString().slice(2)
+                                    lon: map[i].gameEntities[j][2][3].toString().slice(0, 2) + '.' + map[i].gameEntities[j][2][3].toString().slice(2)
                                 };
                                 this.portals.push(myObj);
                             }
@@ -48,7 +48,9 @@
         },
         watch: {
             msg: function () {
-                this.fetch();
+                if (this.msg !== '') {
+                    this.fetch();
+                }
             }
         }
     }
